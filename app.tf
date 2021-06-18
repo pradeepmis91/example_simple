@@ -45,6 +45,7 @@ output "okta_app_oauth_client_id" {
 
 output "okta_app_oauth_client_secret" {
   value = okta_app_oauth.example.client_secret
+  sensitive = true
 }
 
 output "okta_auth_server_id" {
